@@ -1,16 +1,37 @@
-const inputField = document.querySelector("input");
-const inputFieldContainer = document.querySelector('.input-field');
-const inputIcon = document.querySelector('span');
+import App from "./components/App.js";
+import {
+ pattern,
+ inputField,
+ inputIcon,
+ invalidSettings,
+ validSettings
+} from "./components/shared/_Private.js";
 
-function validate({ target }) {
- const _value = target.value;
- const pattern = /^[abcde]+$/;
+//Wire keyup event on the input
+inputField.addEventListener('keyup', validate);
 
- if (pattern.test(_value)) {
-  inputIcon.classList.remove("invalid");
- } else {
-  inputIcon.classList.add("invalid");
- }
+function validState() {
+ inputIcon.className = "fa fa-check-circle";
+ App.clearSettings(invalidSettings);
+ App.addSettings(validSettings);
 }
 
-inputField.addEventListener('keyup', validate);
+function invalidState() {
+ inputIcon.className = "fa fa-envelope";
+ App.clearSettings(validSettings);
+ App.addSettings(invalidSettings);
+}
+
+function validate({ target }) {
+ const inputValue = target.value.trim();
+ const validateEmail = pattern.test(inputValue);
+
+ if (validateEmail)
+  validState();
+ else
+  invalidState();
+
+ if (inputValue.length === 0)
+  App.clearSettings(invalidSettings);
+}
+
