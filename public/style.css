@@ -4,9 +4,9 @@ body {
  margin: 0;
  box-sizing: border-box;
  position: relative;
- --bg: #eee;
- --card-bg: #fff;
- --opacity-transparent: rgba(0, 0, 0, .56);
+ --bg: #111;
+ --card-bg: #212121;
+ --opacity-transparent: rgba(227, 226, 226, 0.56);
 }
 
 .border-invalid {
@@ -18,6 +18,10 @@ body {
 }
 
 .invalid {
+ color: orangered !important;
+}
+
+.error {
  color: red !important;
 }
 
@@ -46,12 +50,32 @@ body {
  box-sizing: border-box;
 }
 
+label {
+ display: block;
+ margin-bottom: 8px;
+ margin-top: 5px;
+ font-size: 18px;
+ font-weight: 900;
+ color: #aaa;
+ box-sizing: border-box;
+}
+
+label:first-child {
+ margin-bottom: 20px;
+ text-align: center;
+ font-size: 20px;
+ box-sizing: border-box;
+
+}
+
 .input-field {
  width: 100%;
  display: grid;
  padding: 10px 0;
  grid-template-columns: 95% 2.5%;
  border: 2px solid grey;
+ box-sizing: border-box;
+
 }
 
 input {
@@ -62,9 +86,11 @@ input {
  text-align: center;
  font-family: 'nunito';
  color: #262424;
+ background-color: transparent;
 }
 
 span {
  transform: translateY(7px);
  font-size: 1px;
+ color: #aaa;
 }
