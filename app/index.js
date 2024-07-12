@@ -31,7 +31,9 @@ function validate({ target }) {
  else
   invalidState();
 
- if (inputValue.length === 0)
-  App.clearSettings(invalidSettings);
+ if (inputValue.length === 0) {
+    App.clearSettings(invalidSettings);
+ }
+ 
 }
 
