@@ -1,4 +1,4 @@
-import App from "https://imsamaritan.github.io/Js-email-validator/app/components/App.js";
+import App from "./components/App.js";
 import {
    pattern,
    inputField,
@@ -6,7 +6,7 @@ import {
    labelElement,
    invalidSettings,
    validSettings
-} from "https://imsamaritan.github.io/Js-email-validator/app/components/shared/_Private.js";
+} from "./components/shared/_Private.js";
 
 const app = new App(labelElement);
 
