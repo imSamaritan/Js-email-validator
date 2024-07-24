@@ -87,6 +87,7 @@ input {
  font-family: 'nunito';
  color: #262424;
  background-color: transparent;
+ caret-color: white;
 }
 
 span {
