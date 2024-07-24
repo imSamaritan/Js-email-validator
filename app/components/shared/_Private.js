@@ -1,4 +1,4 @@
-export const pattern = /^[a-z0-9\.-]+@[a-z]{5,7}\.([a-z]{3}|[a-z]{2}\.[a-z]{2})$/i;
+export const pattern = /^[a-z0-9\.-]+@[a-z]{5,}\.([a-z]{3}|[a-z]{2}\.[a-z]{2})$/i;
 
 export const inputField = document.querySelector("input.email");
 export const inputFieldContainer = document.querySelector('.input-field');
