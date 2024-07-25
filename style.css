@@ -75,7 +75,7 @@ label.label-heading {
 .input-field {
  width: 100%;
  display: grid;
- padding: 10px 0;
+ padding: 10px 25px;
  grid-template-columns: 95% 2.5%;
  border: 2px solid grey;
  box-sizing: border-box;
