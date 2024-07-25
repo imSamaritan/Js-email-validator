@@ -92,10 +92,25 @@ input {
  color: #262424;
  background-color: transparent;
  caret-color: white;
+ padding-right: 15px;
 }
 
 span {
  transform: translateY(7px);
  font-size: 1px;
  color: #aaa;
+}
+
+
+
+@media screen and (max-width: 901px) {
+  .form-field {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 713px) {
+  .form-field {
+    width: 96%;
+  }
 }
