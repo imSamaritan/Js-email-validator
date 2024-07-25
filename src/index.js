@@ -1,6 +1,6 @@
-import App from "./components/App.js";
-import Dom from "./components/shared/Dom.js";
-import {inputField } from "./components/shared/_Private.js";
+import App from "./components/App";
+import Dom from "./components/shared/Dom";
+import {inputField } from "./components/shared/_Private";
 
 const validate = () => {
    /** @type {string} */

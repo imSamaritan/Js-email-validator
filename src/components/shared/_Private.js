@@ -1,4 +1,3 @@
-
 export const pattern = /^[a-z0-9\.-]+@[a-z]{5,}\.([a-z]{3}|[a-z]{2}\.[a-z]{2})$/i;
 
 /** @type {HTMLInputElement} */ 

@@ -1,4 +1,4 @@
-import { pattern } from "./shared/_Private.js";
+import { pattern } from "./shared/_Private";
 
 /**
  * @class App
